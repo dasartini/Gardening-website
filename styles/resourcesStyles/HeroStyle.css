@@ -1,0 +1,53 @@
+.image-container {
+    margin: 50px 5px;
+    display: flex;
+    background-image: url('../assets/gardening1.jpg');
+    background-size: cover; /* Changed to cover for proper scaling */
+    background-position: center; /* Center the background image */
+    border-radius: 30px;
+    padding: 20px;
+    align-items: center; /* Center items vertically */
+}
+
+.profile-pic {
+    width: 20%;
+    border-radius: 50%;
+    margin-right: 20px; /* Space between the profile pic and the text */
+}
+
+.info-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    width: 100%;
+    color: #fefffb;
+}
+
+.info-container .info {
+    margin-left: 15px;
+}
+
+.info-container .info button {
+    margin: 5px 0; /* Adjusted margin for better spacing */
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column; /* Stack children vertically */
+        text-align: center; /* Center text alignment */
+    }
+
+    .profile-pic {
+        width: 50%; /* Adjust width for smaller screens */
+        margin-right: 0; /* Remove margin-right as it's no longer needed */
+        margin-bottom: 20px; /* Add margin-bottom to space out from text */
+    }
+
+    .info-container {
+        flex-direction: column; /* Stack text and button vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .info-container .info {
+        margin-left: 0; /* Remove left margin for better alignment */
+    }
+}

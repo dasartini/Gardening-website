@@ -12,8 +12,8 @@ body, .nav, .menu {
 }
 
 .nav {
-    margin: 0% 38%;
-    position: relative;
+    margin: 0% 0%;
+    position: absolute;
     background-color: #fff;
     padding: 20px;
     transition: 0.5s;
@@ -31,7 +31,7 @@ body, .nav, .menu {
 }
 
 .nav input:checked ~ .menu {
-    width: 125rem;}
+    width: 30rem;}
 
 .menu li {
     list-style: none;
