@@ -5,6 +5,7 @@ import './App.css'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import About from '../components/About'
+import ContactForm from '../components/ContactForm'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +15,8 @@ function App() {
     <Header/>
     <Hero/>
  <About/>
-      <div>
+ <ContactForm/>
+      {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -33,7 +35,7 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
+      </p> */}
     </>
   )
 }
