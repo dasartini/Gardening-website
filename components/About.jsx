@@ -1,10 +1,10 @@
-import HeroStyle from "../styles/HeroStyle"
+import CardStyle from "../styles/CardStyle"
 import gardening2 from '../src/assets/gardening2.jpg'
 
 function About(){
 
     return(
-        <HeroStyle>
+        <CardStyle>
         <>
          <div className="about-container" >
         <div className="about-container">
@@ -21,7 +21,7 @@ function About(){
         </div>
         
         </>
-        </HeroStyle>
+        </CardStyle>
     )
 }
 
