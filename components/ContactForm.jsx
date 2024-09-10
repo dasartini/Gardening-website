@@ -120,7 +120,7 @@ const ContactForm = () => {
           </form>
         </div>
         <div className="form-right">
-          <img src={gardening3} alt="Contact Us Image" />
+          <img src={gardening3} alt="Contact Us Image"/>
         </div>
       </div>
     </FormStyle>
