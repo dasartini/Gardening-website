@@ -1,6 +1,6 @@
 .about-container {
   
- background-color: rgb(245, 226, 166) ;
+ background-color:  #F5F5DC ;
   
     align-items: center; /* Center items vertically */
 }
@@ -15,7 +15,7 @@
     display: flex;
     align-items: center; /* Center items vertically */
     width: 100%;
-    color: #020202;
+    color:#2F4F4F;
 }
 
 /* .about-container .about-info {
