@@ -12,7 +12,6 @@ function Header(){
   
             <li><a href="#">about</a></li>
             <li><a href="#">testimonials</a></li>
-            <li><a href="#">enquiry</a></li>
             <li><a href="#">contact</a></li>
 
           </div>
