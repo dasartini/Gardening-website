@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import ContactForm from '../components/ContactForm'
+import {Routes, Route} from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,9 +14,15 @@ function App() {
   return (
     <>
     <Header/>
+    <section id='home'>
     <Hero/>
+    </section>
+    <section id='about'>
  <About/>
+ </section>
+ <section id='contact'>
  <ContactForm/>
+ </section>
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
