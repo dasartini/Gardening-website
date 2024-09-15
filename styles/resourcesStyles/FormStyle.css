@@ -90,13 +90,12 @@ textarea {
   background-color: #ff4757;
 }
 
-/* Media Query for responsiveness */
 @media (max-width: 768px) {
   .form-container {
     flex-direction: column;
   }
 
   .form-right {
-    display: none; /* Hide the image on smaller screens */
+    display: none; 
   }
 }

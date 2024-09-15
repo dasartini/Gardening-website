@@ -1,23 +1,23 @@
 .image-container {
-    margin: 50px 5px;
+    margin: 20px 5px;
     display: flex;
     background-image: url('../assets/gardening1.jpg');
-    background-size: cover; /* Changed to cover for proper scaling */
-    background-position: center; /* Center the background image */
+    background-size: cover; 
+    background-position: center; 
     border-radius: 30px;
     padding: 20px;
-    align-items: center; /* Center items vertically */
+    align-items: center;
 }
 
 .profile-pic {
     width: 20%;
     border-radius: 50%;
-    margin-right: 20px; /* Space between the profile pic and the text */
+    margin-right: 20px; 
 }
 
 .info-container {
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center; 
     width: 100%;
     color: #fefffb;
 }
@@ -27,27 +27,27 @@
 }
 
 .info-container .info button {
-    margin: 5px 0; /* Adjusted margin for better spacing */
+    margin: 5px 0; 
 }
 
 @media (max-width: 768px) {
     .image-container {
-        flex-direction: column; /* Stack children vertically */
-        text-align: center; /* Center text alignment */
+        flex-direction: column; 
+        text-align: center;
     }
 
     .profile-pic {
-        width: 50%; /* Adjust width for smaller screens */
-        margin-right: 0; /* Remove margin-right as it's no longer needed */
-        margin-bottom: 20px; /* Add margin-bottom to space out from text */
+        width: 50%;
+        margin-right: 0; 
+        margin-bottom: 20px; 
     }
 
     .info-container {
-        flex-direction: column; /* Stack text and button vertically */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .info-container .info {
-        margin-left: 0; /* Remove left margin for better alignment */
+        margin-left: 0; 
     }
 }
