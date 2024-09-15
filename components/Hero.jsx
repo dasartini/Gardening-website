@@ -13,7 +13,7 @@ function Hero(){
             <h2>Sanjay Gordon: resourceful Garden</h2>
         <p>Best gardening option</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio illum recusandae eos perferendis culpa magnam provident ut laboriosam, doloremque officia tempore consequuntur, accusantium quos quaerat dolorem nisi, veniam aspernatur adipisci.</p>
-        <button> BOOK NOW</button>
+       <a href="#contact"><button> BOOK NOW</button></a> 
         </div>
         
         </div>
