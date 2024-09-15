@@ -3,6 +3,7 @@ import FormStyle from '../styles/FormStyle';
 import gardening3 from '../src/assets/gardening3.jpg';
 
 const ContactForm = () => {
+  const [sending, setSending] = useState(false)
   const [formData, setFormData] = useState({
     email: '',
     message: '',
@@ -32,9 +33,10 @@ const ContactForm = () => {
     setAttachment(e.target.files[0]);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
+    setSending(true)
+console.log('sending')
     const data = new FormData();
     data.append('email', formData.email);
     data.append('message', formData.message);
@@ -43,23 +45,26 @@ const ContactForm = () => {
     if (attachment) {
       data.append('attachment', attachment);
     }
-
-    try {
-      const response = await fetch('https://email-form-backend.onrender.com/api/send-email', {
-        method: 'POST',
-        body: data,
+  
+    fetch('https://email-form-backend.onrender.com/api/send-email', {
+      method: 'POST',
+      body: data,
+    })
+      .then(response => {
+        if (response.ok) {
+          alert('Email sent successfully!');
+        } else {
+          alert('Failed to send email.');
+        }
+      })
+      .then(()=>{
+          setSending(false)
+      })
+      .catch(error => {
+        console.error('Error:', error);
       });
-
-      if (response.ok) {
-        alert('Email sent successfully!');
-      } else {
-        alert('Failed to send email.');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-    }
   };
-
+  
   return (
     <FormStyle>
       <div className="form-container">
@@ -116,7 +121,10 @@ const ContactForm = () => {
                 </button>
               )}
             </div>
-            <button type="submit" className="submit-btn">Send</button>
+            <div className='sendContainer'>
+            <button type="submit" className="submit-btn">{sending? <div className="loaderMail"></div>:<>Send</>}</button>
+            
+            </div>
           </form>
         </div>
         <div className="form-right">
