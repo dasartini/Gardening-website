@@ -2,8 +2,7 @@
   
  background-color:  #F5F5DC ;
   
-    align-items: center; /* Center items vertically */
-}
+    align-items: center; }
 
 .about-pic {
     width: 20%;
@@ -13,34 +12,40 @@
 
 .about-container {
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center;
     width: 100%;
     color:#2F4F4F;
 }
-
-/* .about-container .about-info {
-} */
 
 
 
 @media (max-width: 768px) {
     .about-container {
-        flex-direction: column; /* Stack children vertically */
-        text-align: center; /* Center text alignment */
+        flex-direction: column; 
+        text-align: center; 
     }
 
     .about-pic {
-        width: 50%; /* Adjust width for smaller screens */
-        margin-right: 0; /* Remove margin-right as it's no longer needed */
-        margin-bottom: 20px; /* Add margin-bottom to space out from text */
+        width: 50%;
+        margin-right: 0; 
+        margin-bottom: 20px;
     }
 
     .about-info {
-        flex-direction: column; /* Stack text and button vertically */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column;
+        align-items: center;
     }
 
     .about-info {
-        margin-left: 0; /* Remove left margin for better alignment */
+        margin-left: 0; 
     }
+    .socials{
+        display: flex;
+       justify-content: center;
+    }
+    .socials-icon img{
+        height: 4rem;
+        padding: 1rem;
+      
+        }
 }

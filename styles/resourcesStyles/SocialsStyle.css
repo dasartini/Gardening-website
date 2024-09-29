@@ -1,0 +1,17 @@
+.socials{
+    display: flex;
+   justify-content: center;
+}
+.socials-icon img{
+    height: 6rem;
+    padding: 1rem;
+  
+    }
+    @media (max-width: 768px){
+
+        .socials-icon img{
+            height:4rem;
+            padding: 1rem;
+          
+            }
+    }

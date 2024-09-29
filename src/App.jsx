@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import ContactForm from '../components/ContactForm';
+import Socials from '../components/Socials';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -32,6 +33,7 @@ function App() {
           <section id="contact">
             <ContactForm />
           </section>
+          <Socials/>
         </>
       )}
     </div>
